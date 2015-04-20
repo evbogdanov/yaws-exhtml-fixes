@@ -13,12 +13,13 @@ out(_Arg) ->
 
 tests 4-5 (self closing tags)
 ```erlang
-EXHTML = {'div', [], [
-  {img, [{src, <<"http://hyber.org/icons/yaws_head.gif">>}, {alt, <<"yaws">>}]},
-  {br},
-  {input, [{type, <<"text">>}]}
-]},
-{exhtml, EXHTML}.
+out(_Arg) ->
+  EXHTML = {'div', [], [
+    {img, [{src, <<"http://hyber.org/icons/yaws_head.gif">>}, {alt, <<"yaws">>}]},
+    {br},
+    {input, [{type, <<"text">>}]}
+  ]},
+  {exhtml, EXHTML}.
 ```
 
 test 16
